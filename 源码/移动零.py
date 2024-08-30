@@ -21,8 +21,7 @@ class MoveZero:
                 i += 1
             j += 1
         return nums
-    # 时间复杂度均为O(n)
-    # 空间复杂度均为O(1)
+
 
 
 num = [1, 2, 0, 1]
