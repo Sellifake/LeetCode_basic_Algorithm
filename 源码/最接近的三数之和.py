@@ -5,9 +5,7 @@ class nearestSum:
     
     def solution(self):
         self.nums.sort()
-
         difference = float('inf')
-
 
         for i in range(len(self.nums) - 2):
             
@@ -20,7 +18,6 @@ class nearestSum:
             max_sum = self.nums[i] + self.nums[right] + self.nums[right - 1]
             if max_sum < self.target and abs(max_sum - self.target) > abs(difference):
                 continue
-
 
             min_sum = self.nums[i] + self.nums[i + 1] + self.nums[i + 2]
             if min_sum > self.target and abs(min_sum - self.target) > difference:
