@@ -21,6 +21,7 @@ class Effective_triangle():
         return ans
     
 nums = [4,2,3,4]
-a = Effective_triangle(nums)
+a = Effective_triangle.solution(nums)
+
 print(a.solution())
 
