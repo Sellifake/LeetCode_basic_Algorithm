@@ -1,10 +1,5 @@
 class recieve_rainwater():
-    def __init__(self, num):
-        self.num = num
-
-
-    def divide_and_conquer(self):
-        num = self.num
+    def divide_and_conquer(num):
         n = len(num)
 
         pro_max = [0] * n  
@@ -22,9 +17,8 @@ class recieve_rainwater():
             res += min(pre, suf) - h
 
         return res
-    
-    def double_pointer(self):
-        num = self.num
+
+    def double_pointer(num):
         n = len(num)
         left = ans = pre_max = suf_max = 0
         right = n - 1
@@ -42,7 +36,7 @@ class recieve_rainwater():
 
 
 num = [0,1,0,2,1,0,1,3,2,1,2,1]
-a = recieve_rainwater(num)
-print(a.double_pointer())
+a = recieve_rainwater.divide_and_conquer(num)
+print(a)
 
 
