@@ -40,3 +40,20 @@
             ans = max(ans, right - left + 1)
 ```
 - 代码其余部分与滑动窗口框架相同。
+- 实际上也可以直接创建字典`dict`
+```python
+    cnt = dict()
+    for right, x in enumerate(nums):
+        cnt[x] = cnt.get(x, 0) + 1
+        while cnt[x] > k:
+            cnt[nums[left]] -= 1
+            left += 1
+        ans = max(ans, right - left + 1)
+    return ans
+```
+
+
+
+
+
+

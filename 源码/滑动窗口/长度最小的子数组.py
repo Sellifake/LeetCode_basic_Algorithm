@@ -36,3 +36,4 @@ nums = [1,4,4]
 target = 1
 a = minSubArrayLen.sliding_window(nums, target)
 print(a) 
+# 初始化一个空字符串
