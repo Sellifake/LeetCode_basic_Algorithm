@@ -33,7 +33,7 @@ for right, num in enumerate(nums):
 ```python
 ans += right - left + 1
 ```
-- 当不满足条件的时候，移动左端点，直至条件满足。
+- 当不满足条件的时候，移动左端点，直至条件满足。额8 5怕【4
 ```python
     while s * (right - left + 1) >= k:
         s -= nums[left]
