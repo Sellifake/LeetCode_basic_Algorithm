@@ -14,7 +14,7 @@ class max_pos_or_neg:
     def solution2(nums):
         def find_max_neg(num):
             left, right = 0, len(nums) - 1
-            while left < right:
+            while left <= right:
                 mid = (left + right) // 2
                 if num[mid] < 0:
                     left = mid + 1
@@ -25,7 +25,7 @@ class max_pos_or_neg:
 
         def find_min_pos(num):
             left, right = 0, len(num) - 1
-            while left < right:
+            while left <= right:
                 mid = (left + right) // 2
                 if num[mid] > 0:
                     right = mid - 1
