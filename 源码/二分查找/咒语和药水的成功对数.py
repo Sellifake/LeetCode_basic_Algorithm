@@ -1,5 +1,5 @@
 class successfulPairs:
-    def solution1(potions, success):
+    def solution1(spells, potions, success):
         def binary_search(nums, target):
             left, right = 0, len(nums) - 1
             while left <= right:
