@@ -1,4 +1,5 @@
 class recieve_rainwater():
+    @property
     def divide_and_conquer(num):
         n = len(num)
 
@@ -36,7 +37,7 @@ class recieve_rainwater():
 
 
 num = [0,1,0,2,1,0,1,3,2,1,2,1]
-a = recieve_rainwater.divide_and_conquer(num)
+a = recieve_rainwater.divide_and_conquer
 print(a)
 
 
